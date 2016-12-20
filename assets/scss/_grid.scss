@@ -1,0 +1,91 @@
+// Vars
+
+
+.container {
+	max-width: 60rem;
+	margin: 0 auto;
+	padding: 0 2rem;
+	
+	&--flex {
+  	@extend .container;
+		display: flex;
+		justify-content: flex-start;
+		flex-flow: row wrap;
+		align-items: flex-start;
+		padding: 0 1rem;
+	}
+}
+
+.row {
+	@extend .container--flex;
+}
+
+.lrg, .med, .sml, .x-sml {padding: 0 1rem;}
+
+
+.col-4 { flex: 0 0 100%;}
+.col-2 { flex: 0 0 50%;}
+
+.offset { margin-left: 50%;}
+
+
+//    GRID COLUMNS
+
+@media #{$lrg} {
+    .lrg {
+	&--col-12 {padding: 0 1rem; flex: 0 0 100%;}
+	&--col-11 {padding: 0 1rem; flex: 0 0 91.667%;}
+	&--col-10 {padding: 0 1rem; flex: 0 0 83.333%;}
+	&--col-9 {padding: 0 1rem; flex: 0 0 75%;}
+	&--col-8 {padding: 0 1rem; flex: 0 0 66.667%;}
+	&--col-7 {padding: 0 1rem; flex: 0 0 58.333%;}
+	&--col-6 {padding: 0 1rem; flex: 0 0 50%;}
+	&--col-5 {padding: 0 1rem; flex: 0 0 41.667%;}
+	&--col-4 {padding: 0 1rem; flex: 0 0 33.333%;}
+	&--col-3 {padding: 0 1rem; flex: 0 0 25%;}
+	&--col-2 {padding: 0 1rem; flex: 0 0 16.667%;}
+	&--col-1 {padding: 0 1rem; flex: 0 0 8.333%;}
+	
+	// Offset
+	&--offset-12 {padding: 0 1rem; margin-left: 100%;}
+	&--offset-11 {padding: 0 1rem; margin-left: 91.667%;}
+	&--offset-10 {padding: 0 1rem; margin-left: 83.333%;}
+	&--offset-9  {padding: 0 1rem; margin-left: 75%;}
+	&--offset-8  {padding: 0 1rem; margin-left: 66.667%;}
+	&--offset-7  {padding: 0 1rem; margin-left: 58.333%;}
+	&--offset-6  {padding: 0 1rem; margin-left: 50%;}
+	&--offset-5  {padding: 0 1rem; margin-left: 41.667%;}
+	&--offset-4  {padding: 0 1rem; margin-left: 33.333%;}
+	&--offset-3  {padding: 0 1rem; margin-left: 25%;}
+	&--offset-2  {padding: 0 1rem; margin-left: 16.667%;}
+	&--offset-1  {padding: 0 1rem; margin-left: 8.333%;}
+}
+}
+
+
+
+@media #{$med} {
+    .med, .sml {
+	&--col-8 {padding: 0 1rem; flex: 0 0 100%;}
+	&--col-7 {padding: 0 1rem; flex: 0 0 87.50%;}
+	&--col-6 {padding: 0 1rem; flex: 0 0 75%;}
+	&--col-5 {padding: 0 1rem; flex: 0 0 62.5%;}
+	&--col-4 {padding: 0 1rem; flex: 0 0 50%; max-width: 50%;}
+	&--col-3 {padding: 0 1rem; flex: 0 0 37.5%;}
+	&--col-2 {padding: 0 1rem; flex: 0 0 25%;}
+	&--col-1 {padding: 0 1rem; flex: 0 0 12.5%;}
+	
+	// offset
+	&--offset-8 {padding: 0 1rem; margin-left: 100%;}
+	&--offset-7 {padding: 0 1rem; margin-left: 87.50%;}
+	&--offset-6 {padding: 0 1rem; margin-left: 75%;}
+	&--offset-5 {padding: 0 1rem; margin-left: 62.5%;}
+	&--offset-4 {padding: 0 1rem; margin-left: 50%;}
+	&--offset-3 {padding: 0 1rem; margin-left: 37.5%;}
+	&--offset-2 {padding: 0 1rem; margin-left: 25%;}
+	&--offset-1 {padding: 0 1rem; margin-left: 12.5%;}
+}
+}
+
+
+
